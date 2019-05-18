@@ -7,13 +7,13 @@ var acentos = {
 }
 
 angular.module('myAppInvestigador')
-  .factory('TareasResource', function($resource,$http) {
+  .factory('TareasResource', function($http) {
     var servicio = {	
 			prInvestigador: function(datos) {
-				return $http.post('prInvestigador.php', datos);  
+				return $http.post('service/prInvestigador.php', datos);  
 			},
 			prIniciar : function(datos) {
-				return $http.post('prIniciar.php', datos);  
+				return $http.post('service/prIniciar.php', datos);  
 			}
 		}
     return servicio;

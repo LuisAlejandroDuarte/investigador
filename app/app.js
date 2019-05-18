@@ -4,9 +4,11 @@
 angular.module('myAppInvestigador', ['ngRoute','ngResource'])
  
 // Declared route 
-.config(['$routeProvider', function($routeProvider) {
+.config(['$routeProvider','$locationProvider', function($routeProvider,$locationProvider)  {
+
+  $locationProvider.hashPrefix('');
 $routeProvider.when('/investigador', {
-        templateUrl: 'investigador/investigador.html',
+        templateUrl: 'investigador/edit-investigador.html',
         controller: 'InvestigadorController'
         
     }).when('/inicio', {
