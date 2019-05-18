@@ -1,14 +1,18 @@
+
 'use strict';
-
-// Declare app level module which depends on views, and core components
-angular.module('myApp', [
-  'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
-
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+ 
+angular.module('myAppInvestigador', ['ngRoute','ngResource'])
+ 
+// Declared route 
+.config(['$routeProvider', function($routeProvider) {
+$routeProvider.when('/investigador', {
+        templateUrl: 'investigador/investigador.html',
+        controller: 'InvestigadorController'
+        
+    }).when('/inicio', {
+        templateUrl: 'inicio/inicio.html',
+        controller: 'InicioController'        
+    }).otherwise({
+      redirectTo: '/inicio'
+  }); 
+}])
