@@ -1,14 +1,17 @@
 <div ng-form="datosInvestiga" novalidate>
     <mostrariconoespera></mostrariconoespera>
      <my-modalproyectos></my-modalproyectos> 
+
+  
+     <div class="container-fluid">
       <div class="panel panel-primary  drop-shadow" style="width:100%;height:auto;margin-top:20px">    
         <div class="panel-heading"><h>{{tiTulo}}</h></div>         
       <div class="panel-body">    
-     <tabset active="active">    
-     <tab  index="0" select="mostrarboton2()">    
-          <tab-heading>    
+     <uib-tabset active="active">    
+     <uib-tab  index="0" select="mostrarboton2()">    
+          <uib-tab-heading>    
             <i class="glyphicon glyphicon-user"></i> Datos Personales     
-          </tab-heading>                         
+          </uib-tab-heading>                         
           <div style="width:20%;height:90px;float:left;margin-top:20px">    
            <table  width="200px" border="0" cellspacing="0"  style="height:150px;border-color:#66FF99;" cellpadding="4">     
            <tr>    
@@ -293,19 +296,19 @@
     
       </div>
     
-        </tab>
+        </uib-tab>
     
        
     
       
     
-        <tab index="1" select="mostrarboton2()">
+         <uib-tab index="1" select="mostrarboton2()">
     
-          <tab-heading>
+          <uib-tab-heading>
     
             <i class="glyphicon glyphicon-book"></i> Informaci&oacute;n Acad&#233;mica
     
-          </tab-heading>
+          </uib-tab-heading>
     
     
     
@@ -421,15 +424,15 @@
     
     
     
-         </tab>
+         </uib-tab>
     
-          <tab index="2" select="nomostrarboton()" >
+       <uib-tab index="2" select="nomostrarboton()" >
     
-          <tab-heading>
+          <uib-tab-heading>
     
             <i class="glyphicon glyphicon-eye-open"></i> Informaci&oacute;n Investigativa
     
-          </tab-heading>
+          </uib-tab-heading>
     
     
     
@@ -569,17 +572,17 @@
     
     
     
-         </tab>
+         </uib-tab>
     
-        <tab index="3" select="mostrarboton3()">
+        <uib-tab index="3" select="mostrarboton3()">
     
     
     
-          <tab-heading>
+          <uib-tab-heading>
     
             <i class="glyphicon glyphicon-th-large"></i> Productos de Investigaci&oacute;n
     
-          </tab-heading>
+          </uib-tab-heading>
     
            <div class="row">
     
@@ -970,11 +973,10 @@
     
     
     
-         </tab>    
+         </uib-tab>    
     
     
-    
-      </tabset>  
+      </uib-tabset>  
     
        <div class="row">
     
@@ -1010,3 +1012,4 @@
     
     </div>
     </div>
+  </div>
