@@ -1,0 +1,17 @@
+{
+    "host": "ftp.grupoguane.com",
+    "username": "grupogua",
+    "password": "MbCj199803#",
+    "remotePath": "/public_html/investigador",
+    "protocol": "ftp",
+    "port": 21,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode",
+        "node_modules"
+    ]
+}
