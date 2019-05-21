@@ -1,0 +1,8 @@
+{
+  "ftp://ftp.grupoguane.com:21@grupogua": {
+    "public_html": {
+      "investigador": {}
+    }
+  },
+  "$version": 1
+}
